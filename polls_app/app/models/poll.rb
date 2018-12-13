@@ -1,3 +1,14 @@
+# == Schema Information
+#
+# Table name: polls
+#
+#  id         :bigint(8)        not null, primary key
+#  title      :string           not null
+#  creator_id :integer          not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
 class Poll < ApplicationRecord
   validates :title, presence: true, uniqueness: true
 
