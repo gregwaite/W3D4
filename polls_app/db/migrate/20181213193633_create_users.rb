@@ -7,6 +7,6 @@ class CreateUsers < ActiveRecord::Migration[5.2]
     end
 
     add_index :users, :username, unique: true      
-    end
   end
 end
+

@@ -8,6 +8,6 @@ class CreatePolls < ActiveRecord::Migration[5.2]
     end
     add_index :polls, :creator_id     
       
-    end
+    
   end
 end
